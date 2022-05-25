@@ -1,8 +1,26 @@
-.site-nav a {
+.site-nav a {color: #212121;
 }
 .site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:focus {color: #2196F3;
 }
 body {
 	font-family: roboto, sans-serif;
+	background-color: #e5e5e5;
+	color: #757575;
 }
+ul {
+	list-style: none;
+}
+.section-title {color: #212121;}
+
+/* 
+Кольорова палітра
+#000000
+#2196F3 акценти
+#212121 текст h2 h3
+#757575
+#FFFFFF
+rgba(255,255,255,0.6)
+*/
+<!--Site nav--> 
+
