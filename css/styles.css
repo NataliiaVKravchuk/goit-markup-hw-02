@@ -1,27 +1,66 @@
-.site-nav a {color: #212121;
+:root {
+	--accent-color: #2196f3;
+	--title-color: #212121;
+	--text-color: #757575;
+	--logo-color: #000000;
+	--contacts-color: rgba(255, 255, 255, 0.6);
+	--first-light-color: #ffffff;
+	--second-light-color: #f5f4fa;
+	--third-light-color: #e5e5e5;
+	/* можна менше, фони не додаємо */
 }
-.site-nav a:hover,
-.site-nav a:focus {color: #2196F3;
-}
-.site-nav .link.current {color: #2196F3}
+
 body {
-	font-family: roboto, sans-serif;
-	background-color: #e5e5e5;
-	color: #757575;
+	font-family: "Roboto", sans-serif;
 }
-ul {
+.list {
 	list-style: none;
 }
-.section-title {color: #212121;}
+.link {
+	text-decoration: none;
+}
+.header {
+	background-color: #ffffff;
+}
+.header-link,
+.header-contact {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
 
-/* 
-Кольорова палітра
-#000000
-#2196F3 акценти
-#212121 текст h2 h3
-#757575
-#FFFFFF
-rgba(255,255,255,0.6)
-*/
-<!--Site nav--> 
+.header-link {
+	color: #212121;
+}
+.header-contact {
+	color: #757575;
+}
 
+.header-link.current {
+	color: #2196f3;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+	color: #2196f3;
+}
+.button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	color: #ffffff;
+
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+/* .logo { 
+	color: #2196F3
+}*/
+
+/* .section-title {color: #212121;} */
