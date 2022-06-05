@@ -1,17 +1,21 @@
 :root {
 	--accent-color: #2196f3;
-	--title-color: #212121;
+	--first-title-color: #ffffff;
+	--second-title-color: #212121;
+	--first-btn-color: #ffffff;
+	--second-btn-color: #212121;
 	--text-color: #757575;
 	--logo-color: #000000;
 	--contacts-color: rgba(255, 255, 255, 0.6);
 	--first-light-color: #ffffff;
 	--second-light-color: #f5f4fa;
 	--third-light-color: #e5e5e5;
-	/* можна менше, фони не додаємо */
+	--dark-color: #2f303a;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	color: var(--text-color);
 }
 .list {
 	list-style: none;
@@ -19,8 +23,51 @@ body {
 .link {
 	text-decoration: none;
 }
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--second-title-color);
+}
+
+.third-title {
+	color: var(--second-title-color);
+}
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--accent-color);
+}
+.pointer {
+	cursor: pointer;
+}
+
+/* ------------------------HEADER-------------------------- */
+.header-logo {
+	color: var(--logo-color);
+}
 .header {
-	background-color: #ffffff;
+	background-color: var(--first-light-color);
 }
 .header-link,
 .header-contact {
@@ -31,36 +78,130 @@ body {
 }
 
 .header-link {
-	color: #212121;
+	color: var(--second-btn-color);
 }
 .header-contact {
-	color: #757575;
+	color: var(--text-color);
 }
 
 .header-link.current {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 
 .header-link:hover,
 .header-link:focus,
 .header-contact:hover,
 .header-contact:focus {
-	color: #2196f3;
+	color: var(--accent-color);
 }
+/* ------------------------HERO-------------------------- */
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--first-title-color);
+	background: var(--dark-color);
+}
+
 .button {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	color: #ffffff;
-
-	background: #2196f3;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
+	color: var(--first-btn-color);
+	background: var(--accent-color);
 }
 
-/* .logo { 
-	color: #2196F3
-}*/
+/* ----------------------BENEFITS----------------------- */
+/* first title */
 
-/* .section-title {color: #212121;} */
+.benefits-title {
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.benefits-text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+/* ----------------------OUR WORK----------------------- */
+/* ----------------------OUR TEAM----------------------- */
+.team-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.team-text {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* ------------------------FOOTER-------------------------- */
+
+.footer {
+	background: var(--dark-color);
+}
+.footer-logo {
+	color: var(--first-title-color);
+}
+.footer-adress {
+	font-family: inherit;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--first-title-color);
+}
+
+.footer-contacts {
+	font-family: inherit;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--contacts-color);
+}
+
+/* ------------------------FILTERS-------------------------- */
+.filter {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.03em;
+	color: var(--second-btn-color);
+}
+
+.filter:hover,
+.filter:focus {
+	color: var(--first-btn-color);
+	background: var(--accent-color);
+}
+/* -----------------------OUR WORKS------------------------- */
+.works-title,
+.works-text {
+	font-family: inherit;
+	font-style: normal;
+}
+
+.works-title {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.works-text {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
