@@ -16,6 +16,7 @@
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--text-color);
+	background-color: var(--first-light-color);
 }
 .list {
 	list-style: none;
@@ -95,6 +96,9 @@ body {
 	color: var(--accent-color);
 }
 /* ------------------------HERO-------------------------- */
+.hero {
+	background-color: var(--dark-color);
+}
 .hero-title {
 	font-weight: 900;
 	font-size: 44px;
@@ -103,7 +107,6 @@ body {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--first-title-color);
-	background: var(--dark-color);
 }
 
 .button {
@@ -112,12 +115,11 @@ body {
 	font-size: 16px;
 	line-height: 1.88;
 	color: var(--first-btn-color);
-	background: var(--accent-color);
+	background-color: var(--accent-color);
 }
 
 /* ----------------------BENEFITS----------------------- */
 /* first title */
-
 .benefits-title {
 	font-size: 14px;
 	line-height: 1.14;
@@ -132,6 +134,12 @@ body {
 }
 /* ----------------------OUR WORK----------------------- */
 /* ----------------------OUR TEAM----------------------- */
+.our-team {
+	background-color: var(--second-light-color);
+}
+.team-member {
+	background-color: var(--first-light-color);
+}
 .team-title {
 	font-weight: 500;
 	font-size: 16px;
@@ -170,6 +178,10 @@ body {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--contacts-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+	color: var(--accent-color);
 }
 
 /* ------------------------FILTERS-------------------------- */
